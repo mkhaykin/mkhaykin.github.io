@@ -1,0 +1,440 @@
+me:
+  name: Михаил Хайкин
+  intro: |
+    Привет, меня зовут Хайкин Михаил.
+
+    В ИТ более 20 лет: начинал как разработчик, руководил группой разработки, но большую часть времени 
+    был сосредоточен на системном администрировании
+    (занимал разные позиции, начиная с системного администратора и заканчивая CIO). 
+    Последние 10 лет работал независимым консультантом.
+
+    Сейчас решил вернуться к разработке, начиная с 2021 года (привет, ковид!) всерьез занялся обучением. 
+    Сконцентрировался на Python, направление - back-end разработка.
+    В разделе "[Образование и Курсы](#education)" приведен список, но, конечно, не весь.
+    Во время обучения выполнил довольно много интересных проектов, но большей частью 
+    это были "игрушечные" проекты типа "Игра жизнь", "Лабиринт", "Судоку", "Сапер" и прочие телеграм-боты. 
+    Так же как фрилансер сделал несколько коммерческих проектов, см. "[Примеры кода](#projects)".
+
+    Мне интересен back-end, в перспективе планирую прокачать уровень до Full Stack Developer (Python, JS, Java).
+    Если у Вас есть интересные задачи, с удовольствием стану частью Вашей команды!
+
+skills:
+  # My skills
+  title: Мои навыки
+  intro: |
+    
+  awards:
+    title: Мои достижения
+    list:
+      - title: топ 50 Yandex
+      # - title: codewars
+      # - title: leetcode
+
+  hard:
+    # Hard skills
+    title: Технические навыки
+    intro: |
+      Конечно оценка субъективная, сделана по [мотивам](https://www.sijinjoseph.com/programmer-competency-matrix/).
+      Так же я привожу только знания, связанные с разработкой.
+
+    resume:
+      
+    groups:
+      # Language
+      - title: Языки
+        items:
+          - title: Python
+            comment: text
+            grade: 55%
+            frameworks:
+              - title: FastApi
+                comment: text
+                grade: 50%
+              - title: Flask
+                comment: text
+                grade: 40%
+              - title: Django
+                comment: text
+                grade: 30%
+          - title: JavaScript
+            grade: 36%
+          - title: Java
+            grade: 23%
+
+      # Database
+      - title: Базы данных
+        items:
+          - title: SQL (Postgres, MS SQL, My SQL)
+            grade: 36%
+          - title: noSQL (Redis, MongoDB)
+            grade: 28%
+
+      # Markup
+      - title: Разметка 
+        items:
+          - title: HTML5 
+            grade: 36%
+          - title: CSS3 & CSS 
+            grade: 28%
+
+      # Architecture & Design
+      - title: Архитектура и дизайн
+        items:
+          - title: Algorithms 
+            grade: 60%
+          - title: Patterns
+            grade: 38%
+
+      # Testing
+      - title: Тестирование
+        items:
+          - title: Pytest 
+            grade: 36%
+          - title: Unittest
+            grade: 16%
+
+      # Development
+      - title: Разработка
+        items:
+          - title: Git + Github, Bitbucket & Sourcetree 
+            grade: 36%
+
+      # Containers, orchestration, deployment
+      - title: Контейнеризация и развертывание
+        items:
+          - title: Docker
+            grade: 36%
+          # - title: CI/CD
+          #   grade: 10%
+          # - title: Kubernetes
+          #   grade: 10%
+          # - title: AWS, Yandex Cloud, etc.
+          #   grade: 10%
+
+  soft:
+    # Soft skills
+    title: Личностные качества
+    intro:  
+    resume: 
+    list:
+      - title: Социальные компетенции
+        description: |
+          Коммуникабельный, умею работать в команде, 
+          имею навыки публичных выступлений, проведения презентаций и конференций. 
+          Дружелюбен, умею владеть собой.
+
+      - title: Лидерские компетенции
+        description: |
+          Есть опыт формирования команд (в т.ч. проектных). Умею принимать решения, есть опыт ведение сложных переговоров.
+          Часто в работе занимался наставничеством.  
+          Склонен к микро-менеджменту. Не склонен к риску.
+
+      - title: Волевые компетенции
+        description: |
+          Стрессоустойчивости предпочитаю управление временем (от pomodoro к долгосрочному планированию).
+          Работоспособен, но рутинная работа скорее вызовет апатию.
+
+      - title: Интеллектуальные компетенции
+        description: |
+          Критическое мышление, аналитический склад ума. Многозадачности предпочту концентрацию. Любознателен, внимателен к деталям.
+
+
+experience:
+  title: Опыт работы
+  list:
+    # Freelance - Developer
+    - position: Python back-end разработчик
+      company: 
+      duration: Май 2023 &mdash; по настоящее время
+      summary: |
+        Заказная разработка:  
+        \- Python (3.х);  
+        \- Фреймфорки: Fastapi (+ RabbitMQ, Celery), Flask, SQLAlchemy (2.x);  
+        \- БД: PostgreSQL, sqlite, Redis.
+
+    # Freelance
+    - position: консультант / системный администратор / CIO
+      company: 
+      duration: Август 2010 &mdash; по настоящее время
+      summary: |
+        Предоставление услуг системного администратора компаниям.  
+        Основные задачи: построение/поддержка инфраструктуры (до 270 ПК, распределенная инфраструктура, несколько городов).  
+        В основном: Microsoft, Cisco, Linux, 1С.  
+        Клиенты: ювелирные производства, розничные сети.  
+        Разработка (powershell, python): парсеры, администрирование, аудит.  
+        Дополнительно: аудит производительности, комплексный аудит, оценка ИТ служб, план развития ИТ.  
+
+    # Сommercial companies
+    - position: системный администратор -> CIO
+      company: коммерческие компании (3)
+      duration: Декабрь, 2004 &mdash; Август, 2010
+      summary: |
+        Работал как самостоятельно, так и в команде.  
+        Опыт управления группами до 7 человек (управление инженерной службой).  
+        В эксплуатации преимущественно продукты компании Microsoft (Exchange, ISA, SP, etc).
+
+    # Developer (КЗАЛ)
+    - position: программист -> нач разработки
+      company: КЗАЛ
+      duration: Август, 2000 &mdash; Декабрь, 2004
+      summary: |
+        Разработка системы управления производством машиностроительного предприятия (мелкосерийное станкостроение).  
+        Задачи:  
+        \- проектирование: BpWin / ErWin;  
+        \- прототипирование, проверка гипотез: MS Access;  
+        \- разработка БД: MS SQL (триггеры, хранимые процедуры, функции, в т. ч. extended).  
+
+    # Developer (Генезис)
+    - position: программист
+      company: Генезис
+      duration: Август, 1997 &mdash; Август, 2000
+      summary: |
+        В мои обязанности входило:  
+        \- организация работы и управление операционным отделом;  
+        \- поддержка складской системы (FoxPro);  
+        \- информационное обеспечение отдела сбыта и отдела маркетинга.  
+
+        Позже работал начальником склада.  
+        Цель: запуск системы Oracle Application (складской модуль).
+      # hide: true
+
+
+projects:
+  # Code samples
+  title: Примеры кода
+  intro: |
+    На коммерческие проекты все права переданы заказчикам, поэтому исходный код не публикуется.
+    С примерами исходного кода можно ознакомиться в разделе "Учебные проекты" или 
+    непосредственно на [GitHub](https://github.com/mkhaykin).
+
+  groups:
+    - title: Коммерческие проекты
+      description:  
+      projects:
+        - title: Интеграция OnlyOffice (pre-sale).
+          description: |
+            Сайт для демонстрации возможности интеграции [OnlyOffice](https://www.onlyoffice.com) / 
+            [Р7-офис](https://r7-office.ru/) и корпоративной системы заказчика.  
+
+            Подготовка сценариев работы, описание API, примеры запросов.
+          stack:
+            - Python
+            - Flask
+            - JWT
+          url:
+          url_git: 
+
+        - title: Промо-сайт (ТЦ).
+          description: |
+            Одностраничный сайт для регистрации покупателями чеков и последующего участия в розыгрыше призов.  
+          stack:
+            - Python
+            - Flask
+            - Sqlite 
+            - CSV
+          url:
+          url_git:
+
+        - title: Утилита конвертации.
+          description: |
+            GUI утилита для упрощения миграции c Microsoft Exchange на CommuniGate.
+          stack:
+            - Python
+            - Tkinter
+          url:
+          url_git:
+
+    - title: Учебные / пет проекты
+      description: 
+      projects:
+        - title: Меню ресторана
+          description: | 
+            REST API по работе с меню ресторана: меню, подменю, блюда. 
+            Реализованы базовые CRUD операции, дополнительно сделана однонаправленная синхронизация данных с Google Sheet.
+
+            Особенности:  
+            \- асинхронная реализация;  
+            \- реализация паттерна "репозиторий";  
+            \- кеширование данных (декоратор);  
+            \- покрытие тестами: pytest;  
+            \- решение представлено в виде docker контейнеров.  
+
+            Полное описание решения доступно по ссылке: [solution.md](https://github.com/mkhaykin/pythonYLab/blob/main/solution.md).
+
+          stack: 
+            - Python
+            - FastAPI
+            - Postgres
+            - Redis
+            - Celery
+            - RabbitMQ
+            - Google Sheets
+          url: 
+          url_git: https://github.com/mkhaykin/pythonYLab
+
+        - title: Проверка качества *.py файлов
+          description: |
+            Пользователь загружает python модули, система выполняет проверку кода на соответствие качеству.
+            После система извещает пользователя о результатах проверки.
+
+            Особенности:  
+            \- api реализована на FastApi;  
+            \- пользовательский интерфейс на Flask;  
+            \- jwt для аутентификации пользователей;  
+            \- асинхронная реализация;  
+            \- pre-commit для проверки пользовательских файлов.  
+
+            Статус: в работе.  
+
+          stack: 
+            - python
+            - FastAPI
+            - Flask
+            - Celery
+            - Postgres
+            - Alembic
+            - JWT
+          url: 
+          url_git: https://github.com/mkhaykin/pythonSkyEng
+
+        - title: Парсинг авито
+          description: |
+            Пользователь формирует запрос на сбор информации о количестве интересующих объявлений для определенного региона и категории.
+            С определенной периодичностью система опрашивает мобильное api avito и сохраняет данные о количестве объявлений. 
+            По коду запроса клиент может получить статистику объявлений.
+
+            Особенности:  
+            \- api реализована на FastApi;  
+            \- асинхронная реализация;  
+            \- для преодоления блокировок avito используется сеть Tor.
+
+            Статус: в работе.
+          stack:
+            - python
+            - FastAPI
+            - Celery
+            - Postgres
+            - Tor
+          url: 
+          url_git: https://github.com/mkhaykin/pythonAvitoFastApi/
+
+    # - title: Projects group
+    #   description: description
+    #   projects:
+    #     - title: project name
+    #       url: https://url.com
+    #       description: progect description
+    #       stack: used technology
+    #       url_git: https://url.com
+
+
+education:
+  title: Education & Courses
+
+  courses:
+    title: Courses
+    list:
+    - time: 2023
+      title: "Computer Science: Programming with a Purpose"
+      url: https://www.coursera.org/learn/cs-programming-java
+      institution:
+        title: Princeton University
+        # url:
+      grade:
+        title: 95.59%
+        # url:
+      hide: true
+
+    - time: 2023
+      title: Algorithms, Part II
+      url: https://www.coursera.org/learn/algorithms-part2
+      institution:
+        title: Princeton University
+      grade:
+        title: 97.40%
+
+    - time: 2023
+      title: Algorithms, Part I
+      url: https://www.coursera.org/learn/algorithms-part1
+      institution:
+        title: Princeton University
+      grade:
+        title: 98.80%
+
+    - time: 2022
+      title: Python Intro -> Core -> OOP
+      institution:
+        title: JetBrains
+        url: https://hyperskill.org
+
+    - time: 2022
+      title: Добрый, добрый Python + ООП
+      institution:
+        title: Сергей Балакирев
+        url: https://stepik.org
+
+    - time: 2022
+      title: Основы программирования на Python
+      url: https://www.coursera.org/learn/python-osnovy-programmirovaniya
+      institution:
+        title: HSE University
+      grade:
+        title: 100%
+        # url: не купил сертификат
+
+    - time: 2021
+      title: ООП и паттерны проектирования в Python
+      url: https://www.coursera.org/learn/oop-patterns-python
+      institution:
+        title: НИУ "Высшая школа экономики"
+      grade:
+        title: 97.03%
+        url: https://www.coursera.org/account/accomplishments/verify/87KNMHFCYKPN
+
+    - time: 2021
+      title: "Python generation: beginners -> advanced"
+      institution:
+        title: BEEGEEK
+        url: https://stepik.org
+
+    - time: 2021
+      title: Погружение в Python
+      url: https://www.coursera.org/learn/diving-in-python
+      institution:
+        title: Moscow Institute of Physics and Technology
+      grade:
+        title: 99.71%
+        url: https://www.coursera.org/account/accomplishments/verify/W3GWR5DSWLU3
+
+    - time: 2021
+      title: "CS50: Computer Science Courses and Programs"
+      url: https://www.edx.org/cs50
+      institution:
+        title: Harvard University
+        url: https://www.harvard.edu/
+
+    # BLANK
+    - time: 1111
+      title: title
+      url: https://url.com
+      institution:
+        title: company name
+        url: https://url.com
+      grade:
+        title: text
+        url: https://url.com
+      hide: true  # drop
+
+  degrees:
+    title: Education
+    list:
+      - details: инженер, системы автоматизированного проектирования
+        university: Костромской государственный технологического университет
+        time: 1994 - 1999
+
+about:
+  title: "Обо мне"
+  items:
+    Хобби: books, hiking, cooking, rock&roll
+    Гражданство: РФ, Израиль
+    Языки: Русский (родной), Английский (B1)

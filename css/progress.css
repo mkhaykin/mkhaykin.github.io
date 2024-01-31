@@ -1,0 +1,97 @@
+ .skills {
+
+	 padding-top: 1px;
+	 padding-bottom: 1px;
+	 background-image: linear-gradient(
+		90deg, 
+
+		transparent 12.5%, 
+		gray 12.5%,
+		gray calc(12.5% + 2px), 
+		transparent calc(12.5% + 2px), 
+
+		transparent 25%, 
+		gray 25%,
+		gray calc(25% + 1px), 
+		transparent calc(25% + 1px),
+
+		transparent 37.5%, 
+		gray 37.5%,
+		gray calc(37.5% + 2px), 
+		transparent calc(37.5% + 2px), 
+
+		transparent 50%, 
+		gray 50%, 
+		gray calc(50% + 1px),
+		transparent calc(50% + 1px),
+
+		transparent 62.5%, 
+		gray 62.5%, 
+		gray calc(62.5% + 2px), 
+		transparent calc(62.5% + 2px), 
+
+		transparent 75%, 
+		gray calc(75%), 
+		gray calc(75% + 1px), 
+		transparent calc(75% + 1px),
+
+		transparent 87.5%, 
+		gray 87.5%, 
+		gray calc(87.5% + 2px), 
+		transparent calc(87.5% + 2px)
+		);
+}
+
+.skills ul {
+	list-style-type:none;
+}
+
+.legend {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
+
+.legend > .block {
+	text-transform: uppercase;
+	text-align: center;
+	/* padding: 5px; */
+	font-weight: bold;
+	font-size: 0.5em;
+	width: 25%;
+  }
+
+ .chart__bar {
+	 height: 30px;
+	 /* height: 1.5em; */
+	 margin-bottom: 10px;
+	 background: linear-gradient(to left, lightgray, #778899);
+	 border-top-right-radius: 4px;
+	 border-bottom-right-radius: 4px;
+}
+
+ .chart__label {
+	 padding-left: 10px;
+	 line-height: 30px;
+	 /* font-weight: bolder; */
+	 color: white;
+}
+
+
+.chart__subbar {
+	height: 20px;
+	/* height: 1.5em; */
+	margin-bottom: 10px;
+	padding-left: 0px;
+	background: linear-gradient(to left, lightgray, #778899);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.chart__sublabel {
+	padding-left: 20px;
+	/* font-style: italic; */
+	line-height: 20px;
+	font-size: smaller;
+	color: white;
+}

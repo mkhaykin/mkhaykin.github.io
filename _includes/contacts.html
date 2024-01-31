@@ -1,0 +1,57 @@
+{% if site.contacts.email %}
+<a aria-label="Send email" href="mailto:{{ site.contacts.email }}">
+    <i class="icon fa fa-envelope"></i>
+</a>
+{% endif %}
+
+{% if site.contacts.skype %}
+<a aria-label="Send email" href="skype:{{ site.contacts.skype }}">
+    <i class="icon fa fa-skype"></i>
+</a>
+{% endif %}
+
+{% if site.contacts.twitter %}
+<a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.contacts.twitter }}">
+    <i class="icon fa fa-twitter" aria-hidden="true"></i>
+</a>
+{% endif %}
+
+{% if site.contacts.instagram %}
+<a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.contacts.instagram }}">
+    <i class="icon fa fa-instagram" aria-hidden="true"></i>
+</a>
+{% endif %}
+
+{% if site.contacts.facebook %}
+<a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.contacts.facebook }}">
+    <i class="icon fa fa-facebook-square" aria-hidden="true"></i>
+</a>
+{% endif %}
+
+{% if site.contacts.linkedin %}
+<a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.contacts.linkedin }}">
+    <i class="icon fa fa-linkedin-square" aria-hidden="true"></i>
+</a>
+{% endif %}
+
+{% if site.contacts.github %}
+<a aria-label="My Github" target="_blank" href="https://github.com/{{ site.contacts.github }}">
+    <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+</a>
+{% endif %}
+
+{% if site.contacts.telegram %}
+<a aria-label="My Telegram" target="_blank" href="https://t.me/{{ site.contacts.telegram }}">
+    <i class="icon fa fa-telegram" aria-hidden="true"></i>
+</a>
+{% endif %}
+
+{% if site.contacts.medium %}
+<a aria-label="My Medium" target="_blank" href="https://medium.com/{{ site.contacts.medium }}">
+    <i class="icon fa fa-medium" aria-hidden="true"></i>
+</a>
+{% elsif site.contacts.medium_url %}
+<a aria-label="My Medium" target="_blank" href="https://{{ site.contacts.medium_url }}">
+    <i class="icon fa fa-medium" aria-hidden="true"></i>
+</a>
+{% endif %}

@@ -1,0 +1,47 @@
+{% assign projects = cv.projects %}
+
+{% if projects %}
+<div class="projects">
+    <header class="projects">
+        <h2>{{ projects.title }}</h2>
+    </header>
+    {% if projects.intro %}
+    {{ projects.intro | markdownify }}
+    {% endif %}
+
+    {% for group in projects.groups %}
+    <div class="project-group">
+        <h3>{{ group.title }}</h3>
+        {% if group.description %}
+        <div>{{ group.description | markdownify }}</div>
+        {% endif %}
+        <div class="project-item">
+            <ul>
+                {% for project in group.projects %}
+                <li>
+                    <h4>
+                        {% if project.url %}
+                        <a href="{{ project.url }}" alt="project demo">{{ project.title }}</a>
+                        {% else %}
+                        {{ project.title }}
+                        {% endif %}
+                    </h4>
+
+                    <div>{{ project.description | markdownify }}</div>
+
+                    {% if project.url_git %}
+                    <a href="{{ project.url_git }}" alt="project's source code">{{ project.url_git }}</a>
+                    {% endif %}
+
+                    {% if project.stack %}
+                    <div>#{{ project.stack | join: " #" }}</div>
+                    {% endif %}
+
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}

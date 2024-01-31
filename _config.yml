@@ -1,0 +1,51 @@
+# Site settings
+favicon: images/favicon.ico
+title: Mikhail Khaykin
+description: Python back-end developer
+
+# comment out to hide
+section_contacts: true
+section_skill: true
+section_projects: true
+section_experience: true
+section_courses: true
+section_education: true
+section_skills: true
+section_about: true
+# section_recognition: true
+# section_links: true
+# section_associations: true
+
+# Contacts, social links
+contacts:
+  email: mkhaikin@yandex.ru
+  # twitter: mikhail-khaykin
+  # facebook: mikhail-khaykin
+  # instagram: mikhail-khaykin
+  skype: live:m.khaikin
+  linkedin: mikhail-khaykin
+  github: mkhaykin
+  website: htts://mkhaykin.github.io
+  # medium: khaykin
+  # medium_url: mkhaykin.medium.com
+  telegram: mikhail_khaykin
+
+ranks:
+  - alt: CodeWars rank
+    url: https://www.codewars.com/users/mkhaikin/badges/micro
+
+exclude:
+  - .vscode/
+  - .github/
+  - .git/
+  - Gemfile
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
+  startings: []

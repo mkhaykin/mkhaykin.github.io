@@ -1,0 +1,75 @@
+{% assign education = cv.education %}
+{% assign courses = cv.education.courses %}
+{% assign degrees = cv.education.degrees %}
+
+<header class="education">
+  <h2>{{ education.title }}</h2>
+</header>
+
+<!-- Courses -->
+{% if courses %}
+  <h3>{{ courses.title }}</h3>
+
+  {% assign last_time = -1 %}
+
+  {% for course in courses.list %}
+    {% if course.hide %}
+      {% continue %}
+    {% endif %}
+
+    <div class="course">
+      <div class="course-item-time {% if course.time == last_time %} {{ 'hide' }} {% endif %}">{{ course.time }}</div>
+      <div class="course-item">
+        <div class="course-item-title">
+          {% if course.url %}
+            <a href="{{ course.url }}"> {{ course.title }} </a>
+          {% else %}
+            {{ course.title }}
+          {% endif %}
+        </div>
+        <div class="course-item-company">
+          {% if course.institution %}
+            {% if course.institution.url %}
+              <a href="{{ course.institution.url }}"> {{ course.institution.title }} </a>
+            {% else %}
+              {{ course.institution.title }} 
+            {% endif %}
+          {% endif %}
+        </div>
+        <div class="course-item-grade">
+          {% if course.grade %}
+            {% if course.grade.url %}
+              <a href="{{ course.grade.url }}"> {{ course.grade.title }} </a>
+            {% else %}
+              {{ course.grade.title }}
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% assign last_time = course.time %}
+  {% endfor %}
+
+{% endif %}
+<!-- end Courses -->
+
+<!-- Degree -->
+{% if degrees %}
+<h3>{{ degrees.title }}</h3>
+
+  {% for degree in degrees.list %}
+    {% if degree.hide %}
+      {% continue %}
+    {% endif %}
+
+    <div class="degree">
+      <div class="degree-item-time">{{ degree.time }}</div>
+      <div class="degree-item">
+        <div class="degree-item-university"> {{ degree.university }}</div>
+        <div class="degree-item-details"> {{ degree.details }}</div>
+      </div>
+    </div>
+
+  {% endfor%}
+{% endif %}
+<!-- end Degree -->

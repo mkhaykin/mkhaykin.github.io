@@ -1,0 +1,34 @@
+{% assign cv = site.data.cv-rus %}
+
+<h1>
+  <span class="title">{{ site.title }}</span>
+</h1>
+
+<div class="header">
+  <div class="header-left">
+    <div class="photo">
+      <img src="/images/photo.jpg" alt="My photo" />
+    </div>
+    <div class="contacts">
+      <!-- begin Contacts -->
+      {% if site.section_contacts %}
+      {% include contacts.html %}
+      {% endif %}
+      <!-- end Contacts -->
+    </div>
+    <div class="ranks">
+      <!-- begin Ranks -->
+      {% for rank in site.ranks %}
+      <div class="rank">
+        <img src="{{ rank.url }}" alt="{{ rank.alt }}" />
+      </div>
+      {% endfor %}
+      <!-- end Ranks -->
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="intro">
+      {{ cv.me.intro | markdownify }}
+    </div>
+  </div>
+</div>
