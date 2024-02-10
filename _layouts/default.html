@@ -4,7 +4,9 @@ layout: compress
 
 {% assign cv = site.data.cv-rus %}
 <!DOCTYPE html>
+<html lang="ru">
 {% include head.html %}
+
 <body>
   <a name="top"></a>
   <header>
@@ -46,14 +48,14 @@ layout: compress
   </section>
   <!-- end Education -->
   {% endif %}
-  
+
   <!-- begin About -->
   <section id="section-about" class="content-section">
     <a name="about"></a>
     {% include about.html %}
   </section>
   <!-- end About -->
-  
+
   {{ content }}
 
   <footer class="footer">
