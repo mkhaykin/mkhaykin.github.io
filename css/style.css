@@ -197,7 +197,7 @@ p {
 .course {
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 .course-item {
@@ -258,17 +258,85 @@ p {
     flex-wrap: wrap;
 }
 
-/* .about-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.about-item-key,
-.about-item-value {
-    padding-left: 10px;
-} */
-
 .hide {
     opacity: 0;
 }
+
+.project-item {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.project-item-stack h5 {
+    display: inline;
+}
+
+.experience-item {
+    border-top: 2px solid #c7c7c7;
+}
+
+.experience-item-duration {
+    font-style: italic;
+}
+
+
+details {
+    /* border: 1px solid #aaa; */
+    /* border-radius: 4px; */
+    padding: 0.5em 0.5em 0;
+    margin: 0.5em 0.5em 0;
+}
+
+details summary>* {
+    display: inline;
+}
+
+summary {
+    font-weight: bold;
+    /* margin: -0.5em -0.5em 0; */
+    /* border-bottom: 1px solid #aaa; */
+    /* padding: 0.5em; */
+    cursor: pointer;
+    list-style: none;
+}
+
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+.about-items h3 {
+    display: inline;
+}
+
+/* details[open] {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;
+} */
+
+summary::after {
+
+    content: "  \25b8";
+ 
+  }
+ 
+  details[open] summary:after {
+ 
+    content: "  \25b4";
+ 
+  }
+
+/* details[open] summary {
+    margin-bottom: 0.5em;
+} */
+
+#skills-list {
+    list-style: square inside;
+    padding-left: 1em;
+    column-count: 2;
+}
+
+ol li {
+    padding: 0.5em 0;
+  }

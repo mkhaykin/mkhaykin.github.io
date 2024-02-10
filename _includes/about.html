@@ -3,15 +3,6 @@
         <h2>{{ cv.about.title }}</h2>
     </header>
     <div class="about-items">
-        {% for item in cv.about.items %}
-        <!-- <div class="about-item"> -->
-            <!-- <div class="about-item-key"> -->
-                <h3>{{ item[0] }}</h3>
-            <!-- </div> -->
-            <!-- <div class="about-item-value"> -->
-                {{ item[1] | markdownify }}
-            <!-- </div> -->
-        <!-- </div> -->
-        {% endfor %}
+        {{ cv.about.text | markdownify }}
     </div>
 </div>
