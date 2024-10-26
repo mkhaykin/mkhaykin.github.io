@@ -164,10 +164,19 @@ skills:
 experience:
   title: Опыт работы
   list:
+    - position: Python разработчик
+      company: ПИЭФФ, ООО
+      duration: Июнь 2024 &mdash; по настоящее время
+      summary: |
+        Задачи: разработка прототипа формирования календарных планов производства и отгрузок жидких и сжиженных продуктов (нефтегазовое производство), моделирование процесса календарного планирования производства.  
+        Документирование прототипа.
+
+        Стек: Python 3.10.  
+
     # Freelance - Developer
     - position: Python back-end разработчик
       company: РВО софт
-      duration: Май 2023 &mdash; по настоящее время
+      duration: Май 2023 &mdash; Июнь 2024
       summary: |
         Python >= 3.8, JavaScript.  
         Фреймфорки:  
@@ -180,7 +189,15 @@ experience:
         \- Redis;  
         \- MongoDB.  
         Управление версиями: Git.  
-        Витруализация: Docker.  
+        Виртуализация: Docker.
+        
+        Задачи:
+
+        ETL: 1C (odata) <-> внешние системы.  
+        Стек: Python 3.10 • FastAPI • SQLalchemy (ORM | RAW SQL) • PostgreSQL • Redis • MongoDB  
+
+        Заказные Web-приложения.  
+        Стек: Python 3.8 • Flask • SQLalchemy • SQLite | MySQL • HTML • CSS • JS  
 
     # Freelance
     - position: консультант / системный администратор / CIO
@@ -211,7 +228,7 @@ experience:
         Разработка системы управления производством машиностроительного предприятия (мелкосерийное станкостроение).  
         Задачи:  
         \- проектирование: BpWin / ErWin;  
-        \- прототипирование, проверка гипотез: MS Access;  
+        \- прототипирование, проверка гипотез: MS Access (VBA);  
         \- разработка БД: MS SQL (триггеры, хранимые процедуры, функции, в т. ч. extended);
         \- руководство группой разработки.  
 
@@ -241,6 +258,7 @@ projects:
   groups:
     - title: Коммерческие проекты
       description:  
+      hide: true
       projects:
 
         - title: Интеграция OnlyOffice (pre-sale)
@@ -278,6 +296,7 @@ projects:
 
     - title: Pet / учебные проекты
       description: 
+      hide: true
       projects:
         - title: Меню ресторана
           url_demo:
