@@ -10,6 +10,9 @@
     {% endif %}
 
     {% for group in projects.groups %}
+        {% if group.hide %}
+        {% continue %}
+        {% endif %}
     <div class="project-group">
         <h3>{{ group.title }}</h3>
         {% if group.description %}
