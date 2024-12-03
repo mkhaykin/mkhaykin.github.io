@@ -1,0 +1,67 @@
+{% assign projects = cv.projects %}
+
+{% if projects %}
+<div class="projects">
+    <header class="projects">
+        <h2>{{ projects.title }}</h2>
+    </header>
+    {% if projects.intro %}
+    {{ projects.intro | markdownify }}
+    {% endif %}
+
+    {% for group in projects.groups %}
+        {% if group.hide %}
+        {% continue %}
+        {% endif %}
+    <div class="project-group">
+        <h3>{{ group.title }}</h3>
+        {% if group.description %}
+        <div>{{ group.description | markdownify }}</div>
+        {% endif %}
+        <div class="project-items">
+
+            {% for project in group.projects %}
+            {% if project.hide %}
+            {% continue %}
+            {% endif %}
+            <div>
+                <details>
+                    <summary class="">
+                        <h4>
+                            {% if project.url %}
+                            <a href="{{ project.url }}" alt="project demo" target="_blank">
+                                {{ project.title }}
+                            </a>
+                            {% else %}
+                            {{ project.title }}
+                            {% endif %}
+                        </h4>
+                    </summary>
+                    <div class="project-item">
+                        <div class="project-item-description">
+                            {{ project.description | markdownify }}
+                        </div>
+
+                        {% if project.url_git %}
+                        <div class="project-item-url">
+                            <a href="{{ project.url_git }}" alt="project's source code" target="_blank">
+                                {{ project.url_git }}
+                            </a>
+                        </div>
+                        {% endif %}
+
+                        {% if project.stack %}
+                        <div class="project-item-stack">
+                            <h5>Stack: </h5>
+                            #{{ project.stack | join: " #" }}
+                        </div>
+                        {% endif %}
+                    </div>
+                </details>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,67 @@
+---
+layout: compress
+---
+
+{% assign cv = site.data.cv-rus %}
+<!DOCTYPE html>
+<html lang="ru">
+{% include head.html %}
+
+<body>
+  <a name="top"></a>
+  <header>
+    {% include header.html %}
+  </header>
+
+  {% if site.section_skill %}
+  <!-- begin Project -->
+  <section id="section-skills" class="content-section">
+    <a name="skills"></a>
+    {% include skill.html %}
+  </section>
+  <!-- end Project -->
+  {% endif %}
+
+  {% if site.section_projects %}
+  <!-- begin Project -->
+  <section id="section-projects" class="content-section">
+    <a name="projects"></a>
+    {% include projects.html %}
+  </section>
+  <!-- end Project -->
+  {% endif %}
+
+  {% if site.section_experience %}
+  <!-- begin Experience -->
+  <section id="section-experience" class="content-section">
+    <a name="experience"></a>
+    {% include experience.html %}
+  </section>
+  <!-- end Experience -->
+  {% endif %}
+
+  {% if site.section_education %}
+  <!-- begin Education -->
+  <section id="section-education" class="content-section">
+    <a name="education"></a>
+    {% include education.html %}
+  </section>
+  <!-- end Education -->
+  {% endif %}
+
+  <!-- begin About -->
+  <section id="section-about" class="content-section">
+    <a name="about"></a>
+    {% include about.html %}
+  </section>
+  <!-- end About -->
+
+  {{ content }}
+
+  <footer class="footer">
+    <a name="footer"></a>
+    {% include footer.html %}
+  </footer>
+</body>
+
+</html>

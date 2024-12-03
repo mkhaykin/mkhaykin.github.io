@@ -1,0 +1,98 @@
+{% assign skills = cv.skills %}
+{% assign hard = cv.skills.hard %}
+{% assign soft = cv.skills.soft %}
+
+<h2 class="">{{ skills.title }}</h2>
+
+{% if skills.intro %}
+{{ skills.intro | markdownify }}
+{% endif %}
+
+<!-- Hard skills -->
+{% if hard %}
+<h3>{{ hard.title }}</h3>
+
+<div class="skills-intro">
+    {{ hard.intro | markdownify }}
+</div>
+
+<div class="skills-list">
+    {% if hard.list %}
+    <ol id="skills-list">
+        {% for item in hard.list %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ol>
+    {% endif %}
+</div>
+
+
+{% if hard.chart and (hard.chart.hide == empty or hard.chart.hide != true )%}
+<details>
+    <summary>{{ hard.chart.title }}</summary>
+    <div class="skills-chart">
+        {% for group in hard.chart.groups %}
+
+        <h4>{{ group.title }}</h4>
+        {% if hard.chart %}
+        <div class="legend">
+            <div class="block ">Trainee</div>
+            <div class="block ">Basic</div>
+            <div class="block ">Advanced</div>
+            <div class="block ">Expert</div>
+        </div>
+        {% endif %}
+        <div class="skills">
+            <ul>
+                {% for item in group.items %}
+                {% assign x = 'style="width: ' | append: item.grade | append: '"' %}
+                <li class="chart__bar" {{ x }}>
+                    <span class="chart__label">
+                        {{ item.title }}
+                    </span>
+                </li>
+                {% for fw in item.frameworks %}
+                {% assign x = 'style="width: ' | append: fw.grade | append: '"' %}
+                <li class="chart__subbar" {{ x }}>
+                    <span class="chart__sublabel">
+                        - {{ fw.title }}
+                    </span>
+                </li>
+                {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+        {% if hard.chart %}
+        <div class="legend">
+            <div class="block ">2<sup>n</sup></div>
+            <div class="block ">n<sup>2</sup></div>
+            <div class="block ">n</div>
+            <div class="block ">log(n)</div>
+        </div>
+        {% endif %}
+
+        {% endfor %}
+    </div>
+</details>
+{% endif %}
+
+<div class="skills-intro">{{ hard.resume | markdownify }}</div>
+{% endif %}
+<!-- end Hard skills -->
+
+<!-- Soft skills -->
+{% if soft %}
+<h3>{{ soft.title }}</h3>
+<div class="skill-intro">{{ soft.intro }}</div>
+<div class="skill-intro">
+    {% for skill in soft.list %}
+    <!-- <div> -->
+        <!-- <h4>{{ skill.title }}</h4> -->
+    <!-- </div> -->
+    <div>
+        {{ skill.description | markdownify }}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+<!-- end Soft skills -->

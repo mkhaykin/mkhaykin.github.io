@@ -1,0 +1,29 @@
+{% assign experience = cv.experience %}
+{% if experience %}
+<header class="experience">
+    <h2>{{ experience.title }}</h2>
+</header>
+
+{% for job in experience.list %}
+{% if job.hide %}
+{% continue %}
+{% endif %}
+<div class="experience-item" itemscope itemprop="worksFor"
+    itemtype="http://schema.org/Organization">
+    <div class="experience-item-title">
+        <h3 class="experience">
+            {{ job.position }}
+            {% if job.company and job.company != '' %}
+            &#11049; {{ job.company }}
+            {% endif %}
+        </h3>
+    </div>
+    <div class="experience-item-duration">
+        {{ job.duration }}
+    </div>
+    <div class="experience-item-summary">
+        {{ job.summary | markdownify }}
+    </div>
+</div>
+{% endfor %}
+{% endif %}
