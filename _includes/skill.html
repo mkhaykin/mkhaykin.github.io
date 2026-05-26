@@ -18,11 +18,14 @@
 
 <div class="skills-list">
     {% if hard.list %}
-    <ol id="skills-list">
-        {% for item in hard.list %}
-        <li>{{ item }}</li>
+    {% for item in hard.list %}
+    <h4>{{ item.title }}</h4>
+    <ol class="skills-list">
+        {% for info in item.items %}
+        <li>{{ info }}</li>
         {% endfor %}
     </ol>
+    {% endfor %}
     {% endif %}
 </div>
 
@@ -83,12 +86,9 @@
 <!-- Soft skills -->
 {% if soft %}
 <h3>{{ soft.title }}</h3>
-<div class="skill-intro">{{ soft.intro }}</div>
+<div class="skill-intro">{{ soft.intro | markdownify }}</div>
 <div class="skill-intro">
     {% for skill in soft.list %}
-    <!-- <div> -->
-        <!-- <h4>{{ skill.title }}</h4> -->
-    <!-- </div> -->
     <div>
         {{ skill.description | markdownify }}
     </div>

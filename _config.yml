@@ -1,4 +1,5 @@
 # Site settings
+encoding: utf-8
 favicon: images/favicon.ico
 title: Mikhail Khaykin
 description: Python back-end developer

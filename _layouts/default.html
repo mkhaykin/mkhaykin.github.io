@@ -22,15 +22,6 @@ layout: compress
   <!-- end Project -->
   {% endif %}
 
-  {% if site.section_projects %}
-  <!-- begin Project -->
-  <section id="section-projects" class="content-section">
-    <a name="projects"></a>
-    {% include projects.html %}
-  </section>
-  <!-- end Project -->
-  {% endif %}
-
   {% if site.section_experience %}
   <!-- begin Experience -->
   <section id="section-experience" class="content-section">
@@ -38,6 +29,15 @@ layout: compress
     {% include experience.html %}
   </section>
   <!-- end Experience -->
+  {% endif %}
+
+  {% if site.section_projects %}
+  <!-- begin Project -->
+  <section id="section-projects" class="content-section">
+    <a name="projects"></a>
+    {% include projects.html %}
+  </section>
+  <!-- end Project -->
   {% endif %}
 
   {% if site.section_education %}

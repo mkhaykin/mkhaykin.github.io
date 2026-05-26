@@ -4,6 +4,10 @@
     <h2>{{ experience.title }}</h2>
 </header>
 
+{% if experience.intro %}
+<p>{{ experience.intro | markdownify }}</p>
+{% endif %}
+
 {% for job in experience.list %}
 {% if job.hide %}
 {% continue %}
@@ -14,7 +18,7 @@
         <h3 class="experience">
             {{ job.position }}
             {% if job.company and job.company != '' %}
-            &#11049; {{ job.company }}
+            &bull; {{ job.company }}
             {% endif %}
         </h3>
     </div>
